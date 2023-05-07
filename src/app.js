@@ -5,6 +5,8 @@ import cors from 'cors';
 
 import "./database";
 
+const port = process.env.PORT || 3001;
+
 class App {
   constructor() {
     this.app = express();
