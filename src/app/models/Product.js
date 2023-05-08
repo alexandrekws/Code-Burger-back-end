@@ -11,7 +11,7 @@ class Product extends Model {
             url: {
                 type: Sequelize.VIRTUAL,
                 get() {
-                    return `http://localhost:3001/product-file/${this.path}`
+                    return `https://code-burger-back-p54t257c9-alexandrekws.vercel.app/${this.path}`
                 },
             },      
         },
