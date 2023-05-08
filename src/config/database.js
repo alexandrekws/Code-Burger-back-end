@@ -1,5 +1,6 @@
 module.exports = {
     dialect: 'postgres',
+    dialectModule: pg,
     host:'containers-us-west-196.railway.app',
     port: 5526,
     username: 'postgres',
