@@ -6,6 +6,7 @@ import cors from 'cors';
 import "./database";
 
 const port = process.env.PORT || 3001;
+const nodeExternals = require('webpack-node-externals')
 
 class App {
   constructor() {

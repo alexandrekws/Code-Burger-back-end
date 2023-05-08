@@ -6,6 +6,7 @@ module.exports = {
     username: 'postgres',
     password: 'AgPhu1OZPBnh71HsneiD',
     database: 'railway',
+    externals: [nodeExternals()],
     define: {
         timespamps: true,
         underscored: true,
