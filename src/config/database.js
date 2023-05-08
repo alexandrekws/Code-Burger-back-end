@@ -1,12 +1,11 @@
 module.exports = {
     dialect: 'postgres',
-    dialectModule: pg,
+    dialectModule: require('pg'),
     host:'containers-us-west-196.railway.app',
     port: 5526,
     username: 'postgres',
     password: 'AgPhu1OZPBnh71HsneiD',
     database: 'railway',
-    externals: [nodeExternals()],
     define: {
         timespamps: true,
         underscored: true,
