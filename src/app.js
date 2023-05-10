@@ -6,6 +6,8 @@ import { Sequelize } from "sequelize";
 
 import "./database";
 
+require("dotenv").config();
+
 const port = process.env.PORT || 3001;
 const sequelize = new Sequelize('postgres://admin:admin@localhost:5432/mydb', {
   dialectModule: require('pg')
