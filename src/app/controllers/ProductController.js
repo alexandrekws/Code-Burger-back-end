@@ -24,7 +24,7 @@ class ProductController {
       return response.status(401).json();
     }
 
-    const { filename: path } = request.file;
+    const { key: path } = request.file;
     const { name, price, category_id, offer } = request.body;
 
     const product = await Product.create({

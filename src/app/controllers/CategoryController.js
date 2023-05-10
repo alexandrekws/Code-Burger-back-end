@@ -22,7 +22,7 @@ class CategoryController {
 
     const { name } = request.body;
 
-    const { filename: path } = request.file;
+    const { key: path } = request.file;
 
     const categoryExists = await Category.findOne({
       where: {
